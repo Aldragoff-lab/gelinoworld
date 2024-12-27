@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Gelino World</title>
+
+    <!-- Bootstrap and Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #74b9ff, #a29bfe);
+            margin: 0;
+        }
+
+        /* Navbar Section */
+        .navbar {
+            background-color: #0077b6;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+        }
+
+        .navbar .nav-link,
+        .navbar .navbar-brand {
+            color: white !important;
+            font-weight: 500;
+        }
+
+        .navbar .nav-link:hover,
+        .navbar .nav-link.active {
+            color: #ffdd59 !important;
+        }
+
+        .navbar.scrolled {
+            background-color: #005f8c;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Breadcrumb Section */
+        .breadcrumb-section {
+            background-color: #fff;
+            padding: 10px 20px;
+            margin-top: 70px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .breadcrumb-section ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .breadcrumb-section ul li {
+            margin-right: 15px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .breadcrumb-section ul li a {
+            text-decoration: none;
+            color: #0077b6;
+            font-weight: 600;
+        }
+
+        .breadcrumb-section ul li a:hover {
+            text-decoration: underline;
+            color: #d63031;
+            transform: translateY(-2px);
+            transition: all 0.3s ease-in-out;
+        }
+
+
+        .breadcrumb-section ul li:last-child {
+            font-weight: 700;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1000px;
+            margin: 120px auto 50px;
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        h2 {
+            color: #0077b6;
+            margin-bottom: 20px;
+        }
+
+        .accordion-button {
+            font-size: 1.1rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .accordion-button:hover {
+            background-color: #ffeaa7;
+            color: #2d3436;
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+        }
+
+
+        .accordion-body {
+            animation: fadeIn 0.4s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: black;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffdd59;
+            text-decoration: none;
+        }
+
+        footer:hover {
+            background-color: #2d3436;
+            transition: background-color 0.4s ease-in-out;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Gelino World Logo" width="100" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-start">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="advertise.html">Advertise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Section -->
+    <div class="breadcrumb-section">
+        <ul>
+            <li>
+                <a href="index.html"><i class="fa fa-home"></i> Home</a>
+            </li>
+            <li>&gt;</li>
+            <li class="active">FAQ's</li>
+        </ul>
+    </div>
+
+
+
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+
+        <!-- General Section -->
+        <h2 style="margin-top: 40px;"><i class="fas fa-info-circle section-icon"></i>General</h2>
+        <div class="accordion" id="generalFAQ" style="margin-bottom: 50px;">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="generalOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#generalCollapseOne">
+                        How does Gelino World provide at minimum cost?
+                    </button>
+                </h2>
+                <div id="generalCollapseOne" class="accordion-collapse collapse show" data-bs-parent="#generalFAQ">
+                    <div class="accordion-body">
+                        Brands and advertisers sponsor the cost of the water in exchange for ad space on the bottle
+                        labels.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="generalTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#generalCollapseTwo">
+                        What is Gelino World all about?
+                    </button>
+                </h2>
+                <div id="generalCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                    <div class="accordion-body">
+                        Gelino World is a platform dedicated to sustainability and innovation, providing eco-friendly
+                        solutions.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="generalThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#generalCollapseThree">
+                        Who can benefit from Gelino World's services?
+                    </button>
+                </h2>
+                <div id="generalCollapseThree" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                    <div class="accordion-body">
+                        Individuals, communities, and businesses looking for sustainable water solutions can benefit
+                        from Gelino
+                        World's offerings.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Distribution Section -->
+        <h2 style="margin-top: 40px;"><i class="fas fa-map-marker-alt section-icon distribution-icon"></i>Distribution
+        </h2>
+        <div class="accordion" id="distributionFAQ" style="margin-bottom: 50px;">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="distributionOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#distributionCollapseOne">
+                        Where can I get GelinoWorld?
+                    </button>
+                </h2>
+                <div id="distributionCollapseOne" class="accordion-collapse collapse" data-bs-parent="#distributionFAQ">
+                    <div class="accordion-body">
+                        GelinoWorld bottles are distributed at events, locations, and community initiatives.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="distributionTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#distributionCollapseTwo">
+                        Do you offer international distribution?
+                    </button>
+                </h2>
+                <div id="distributionCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#distributionFAQ">
+                    <div class="accordion-body">
+                        Yes, we are expanding to offer GelinoWorld internationally through our partnerships.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="distributionThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#distributionCollapseThree">
+                        How can I request a GelinoWorld distribution point?
+                    </button>
+                </h2>
+                <div id="distributionCollapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#distributionFAQ">
+                    <div class="accordion-body">
+                        You can contact us via our website or email to propose a distribution point in your area.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Advertising Section -->
+        <h2 style="margin-top: 40px;"><i class="fas fa-bullhorn section-icon advertising-icon"></i>Advertising</h2>
+        <div class="accordion" id="advertisingFAQ" style="margin-bottom: 50px;">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="advertisingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#advertisingCollapseOne">
+                        How can I advertise on GelinoWorldbottles?
+                    </button>
+                </h2>
+                <div id="advertisingCollapseOne" class="accordion-collapse collapse" data-bs-parent="#advertisingFAQ">
+                    <div class="accordion-body">
+                        Contact our advertising team to sponsor a batch of bottles. Your ad will be placed directly on
+                        the labels.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="advertisingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#advertisingCollapseTwo">
+                        What are the ad placement options available?
+                    </button>
+                </h2>
+                <div id="advertisingCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#advertisingFAQ">
+                    <div class="accordion-body">
+                        We offer both full-label and partial-label ad placements to fit your branding needs.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="advertisingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#advertisingCollapseThree">
+                        Are there discounts for bulk advertising?
+                    </button>
+                </h2>
+                <div id="advertisingCollapseThree" class="accordion-collapse collapse" data-bs-parent="#advertisingFAQ">
+                    <div class="accordion-body">
+                        Yes, we provide discounted rates for bulk advertising campaigns. Contact us for detailed
+                        pricing.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Others Section -->
+        <h2 style="margin-top: 40px;"><i class="fas fa-question-circle section-icon other-icon"></i>Others</h2>
+        <div class="accordion" id="otherFAQ" style="margin-bottom: 50px;">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="otherOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#otherCollapseOne">
+                        Can I donate to GelinoWorld?
+                    </button>
+                </h2>
+                <div id="otherCollapseOne" class="accordion-collapse collapse" data-bs-parent="#otherFAQ">
+                    <div class="accordion-body">
+                        Yes, we accept donations to expand our distribution and provide more communities with free
+                        water.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="otherTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#otherCollapseTwo">
+                        How can I join the Gelino World initiative?
+                    </button>
+                </h2>
+                <div id="otherCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#otherFAQ">
+                    <div class="accordion-body">
+                        You can join by signing up as a volunteer or partner through our official website.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="otherThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#otherCollapseThree">
+                        How can I stay updated about Gelino World?
+                    </button>
+                </h2>
+                <div id="otherCollapseThree" class="accordion-collapse collapse" data-bs-parent="#otherFAQ">
+                    <div class="accordion-body">
+                        Subscribe to our newsletter and follow us on social media for the latest updates and events.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Gelino World. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+        </footer>
+
+
+
+        <!-- Bootstrap JS and Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // Change Navbar Color on Scroll
+            window.addEventListener('scroll', function () {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        </script>
+</body>
+
+
+</body>
+
+</html>
