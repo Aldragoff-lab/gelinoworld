@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host       = 'smtp.gmail.com';   // Gmail SMTP server
         $mail->SMTPAuth   = true;
         $mail->Username   = 'aldragoff@gmail.com';   // 🔹 Replace with your Gmail
-        $mail->Password   = 'Madara@65';     // 🔹 Replace with your Gmail App Password
+        $mail->Password   = 'qyvt qtlh xaqj nlku';     // 🔹 Replace with your Gmail App Password
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
@@ -58,4 +58,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Invalid Request";
 }
 ?>
+
 
